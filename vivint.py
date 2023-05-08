@@ -4,17 +4,17 @@ Provides an interface to the Vivint cloud service by authenticating to the API w
 account's username and password.
 """
 
+import argparse
+import base64
+import json
 import os
 import re
 import sys
-import time
-import json
-import base64
-import urllib3
-import argparse
 import threading
-
+import time
 from datetime import datetime
+
+import urllib3
 
 try:
     import certifi
@@ -22,9 +22,8 @@ except:
     pass
 
 from http.cookies import SimpleCookie
-
 # pylint: disable=E0611,E0401
-from urllib.parse import urlencode, unquote, quote, quote_plus
+from urllib.parse import quote, quote_plus, unquote, urlencode
 
 VIVINT_AUTH_ENDPOINT = "https://id.vivint.com"
 VIVINT_API_ENDPOINT = "https://www.vivintsky.com"

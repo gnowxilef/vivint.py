@@ -4,11 +4,12 @@ Demonstrats a long-lived polling thread that checks the state of all thermostats
 """
 
 from __future__ import print_function
+
+import argparse
+import json
 import os
 import sys
-import json
 import time
-import argparse
 
 import vivint
 

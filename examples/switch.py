@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-import time
 import os
-import vivint
+import time
 from datetime import datetime
+
+import vivint
 
 # Set up the connection to the cloud session
 session = vivint.VivintCloudSession(os.environ["USERNAME"],

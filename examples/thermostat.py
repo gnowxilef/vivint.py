@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import time
+
 import vivint
 
 # Set up the connection to the cloud session
